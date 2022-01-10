@@ -1,0 +1,10 @@
+$(function () 
+{
+$("#6393").parent().parent().parent().parent().hide(); //Accept section
+$("#6394").parent().parent().parent().parent().hide(); //Reject section
+
+var bt = document.getElementById('SubmitButton');
+bt.disabled = true;
+$('.remove_bttn').hide();
+$('.add_bttn').hide();
+});

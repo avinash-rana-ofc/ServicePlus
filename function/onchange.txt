@@ -1,0 +1,20 @@
+//ON change date validation application form
+$(function () 
+{
+var DOJ = document.getElementById("3846").value;  //DATE OF JOINING
+var DOR = document.getElementById("3847").value;  //DATE OF RETIREMENT
+
+var DOJarray=DOJ.split("/");
+var DORarray=DOR.split("/");
+
+DOJ=DOJarray[1]+'/'+DOJarray[0]+'/'+DOJarray[2];
+DOR=DORarray[1]+'/'+DORarray[0]+'/'+DORarray[2];
+
+if ((Date.parse(DOJ) >= Date.parse(DOR))) 
+{
+alert("DATE OF RETIREMENT should be greater than DATE OF JOINING, Please enter correct Dates.");
+$("#1660").prop('value',"");  //DOJ
+$("#1668").prop('value',"");  //DOR
+}
+});
+return true;

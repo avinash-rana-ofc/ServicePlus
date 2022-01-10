@@ -1,0 +1,15 @@
+$(function()
+{
+var data = document.getElementById(""+TextField).value;
+var yourVariable = data .toLowerCase();
+var words = ['insert', 'delete', 'update', 'script', 'javascript', 'js', 'php', 'java '];
+for (i = 0; i < words.length; i++) {
+    if (yourVariable.indexOf(words[i]) >= 0){
+        alert('Keywords like insert,delete,update,script,javascript,js,php,Java. \nThese are not allowed.' + words[i]);
+        document.getElementById(""+TextField).value = "";
+    }
+}
+
+});
+
+return true; 

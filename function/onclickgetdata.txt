@@ -1,0 +1,9 @@
+$(function() { var va_1 = $('input:text[name=3882]').val();
+ if(va_1==0) 
+{ 
+document.getElementById('3831_1').checked=true; $("#3844").parent().parent().parent().parent().show(); $("#3823").parent().parent().parent().parent().show();//applicant section $("#3833").parent().parent().parent().parent().show();//flat section
+ } 
+else {
+ document.getElementById('3831_2').checked=true; $("#3844").parent().parent().parent().parent().hide(); $("#3823").parent().parent().parent().parent().show();//applicant section $("#3833").parent().parent().parent().parent().show();//flat section
+ } 
+}); return true; 

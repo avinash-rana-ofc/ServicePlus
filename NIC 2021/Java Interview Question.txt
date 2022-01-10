@@ -1,0 +1,9 @@
+Java Interview Question
+
+What is Dependency Injection?
+What is ACID property?
+What tool is used in postgresql?
+View in Database(postgresql)
+Semaphore in Os?
+MVC?
+JAVA 8 AND 9 DIFFERENCE?

@@ -1,0 +1,25 @@
+Application Acknowledgement
+
+
+Date: $attr_-1340(application recvieved on)
+
+
+Dear $attr_4361(applicant name),
+Thank you for using ServicePlus.
+Your $attr_-2025(service name) has been successfully submitted to $attr_-5(unit name), $attr_-2035(state).
+
+
+Application Summary
+
+
+Application Reference Number is $attr_-3.(app ref no)
+Your application was received on $attr_-1340.(application recvieved on)
+
+Service Designated Officer:
+Name: $attr_-1335(do name)
+Address:$attr_-1336(do address)
+Email: $attr_-1338(do email)
+Phone No.: $attr_-1339(do phone)
+
+Regards
+ServicePlus

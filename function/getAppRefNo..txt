@@ -1,0 +1,5 @@
+$(function() {
+var appID=$("#applRefNo").val();
+$("#"+applrefno).val(appID); //TO GET APP REF ID
+}) ;
+return true;

@@ -1,0 +1,91 @@
+//HideJsonSectiononloadEstateOfficerLicenseGen 
+
+$("#3889_1").parent().parent().parent().parent().parent().parent().hide();  //Govt Lic Document
+$("#3890_1").parent().parent().parent().parent().parent().parent().hide();  //non Govt Lic Document
+var bt = document.getElementById('SubmitButton');
+bt.disabled = true;
+
+$('input:radio[name=3445]').change(function() 
+{
+$("#3902").parent().parent().parent().parent().hide(); //json Section
+$("#3891").parent().parent().parent().parent().hide(); //License Section
+$("#3889_1").parent().parent().parent().parent().parent().parent().hide();  //Govt Lic Document
+$("#3890_1").parent().parent().parent().parent().parent().parent().hide();  //non Govt Lic Document
+var bt = document.getElementById('SubmitButton');
+bt.disabled = true;
+var check1 = $('input:radio[name=3857]:checked').val(); //forward to
+var check2 = $('input:text[name=3903]').val(); //  Employee type
+
+if(check1==15906)// Issuance License by Estate officer cum joint secretary 
+{
+$("#3902").parent().parent().parent().parent().hide(); //json Section
+$("#3891").parent().parent().parent().parent().show(); //License Section
+//Employee type
+if(check2==0) //Govt.emp
+{ 
+$("#3899").parent().parent().parent().hide(); //License fee
+//$("#3232").parent().parent().parent().hide(); //Amount in word
+$("#3889_1").parent().parent().parent().parent().parent().parent().parent().hide(); //license govt
+$("#3890_1").parent().parent().parent().parent().parent().parent().parent().hide(); //license non govt
+document.getElementById('3889_1').checked=true;
+document.getElementById('3890_1').checked=false;
+$("#3896").parent().parent().show(); //Govt Button Section
+$("#3897").parent().parent().hide(); //Non Govt Button Section
+}
+else if(check2==1) //non Govt.emp
+{
+$("#3899").parent().parent().parent().show(); //License fee
+//$("#3232").parent().parent().parent().show(); //Amount in word
+$("#3889_1").parent().parent().parent().parent().parent().parent().parent().hide(); //license govt
+$("#3890_1").parent().parent().parent().parent().parent().parent().parent().hide(); //license non govt
+document.getElementById('3889_1').checked=false; //govt emp
+document.getElementById('3890_1').checked=true; //non govt emp
+$("#3896").parent().parent().hide(); //Govt Button Section
+$("#3897").parent().parent().show(); //Non Govt Button Section
+}
+bt.disabled = true;
+}
+else if(check1==15902)// Verification Application and Preparation License by Head Clerk
+{
+$("#3902").parent().parent().parent().parent().hide(); //json Section
+$("#3891").parent().parent().parent().parent().hide(); //License Section
+bt.disabled = false;
+}
+});
+
+//action
+$('input:radio[name=3856]').change(function () 
+{
+$("#3902").parent().parent().parent().parent().hide(); //json Section
+$("#3891").parent().parent().parent().parent().hide(); //License Section
+var bt = document.getElementById('SubmitButton');
+bt.disabled = true;
+var check = $('input:radio[name=3856]:checked').val(); //action
+if(check==10)
+{
+$("#3902").parent().parent().parent().parent().hide(); //json Section
+$("#3891").parent().parent().parent().parent().hide(); //License Section
+$("#3889_1").parent().parent().parent().parent().parent().parent().hide();  //Govt Lic Document
+$("#3890_1").parent().parent().parent().parent().parent().parent().hide();  //non Govt Lic Document
+bt.disabled = false;
+}
+else if(check==9)
+{
+$("#3902").parent().parent().parent().parent().hide(); //json Section
+$("#3891").parent().parent().parent().parent().hide(); //License Section
+$("#3889_1").parent().parent().parent().parent().parent().parent().hide();  //Govt Lic Document
+$("#3890_1").parent().parent().parent().parent().parent().parent().hide();  //non Govt Lic Document
+bt.disabled = true;
+} 
+});
+$(function () 
+{
+document.getElementById('3364').readOnly=true;
+$("#3902").parent().parent().parent().parent().hide(); //json Section
+$("#3891").parent().parent().parent().parent().hide(); //License Section
+$("#3889_1").parent().parent().parent().parent().parent().parent().hide();  //Govt Lic Document
+$("#3890_1").parent().parent().parent().parent().parent().parent().hide();  //non Govt Lic Document
+var bt = document.getElementById('SubmitButton');
+bt.disabled = true;
+});
+return true;

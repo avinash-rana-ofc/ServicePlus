@@ -1,0 +1,14 @@
+var a = document.getElementById("applLoc").value; 
+var check = a.split("-"); 
+alert(check[2]); 
+var new1 = check[2]; 
+var new2 = new1.split(")"); 
+alert(new2[0]);
+var final = new2[0];
+var test = final.split(" "); 
+alert(test[1]);
+var testFinal = test[1];
+$("select option").filter(function() {
+  //may want to use $.trim in here
+  return $(this).text() == testFinal;
+}).prop('selected', true);

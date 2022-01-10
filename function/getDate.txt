@@ -1,0 +1,11 @@
+var dateOne = new Date();
+var dateTwo = new Date(2020, 10, 11, 12, 10, 20); //year,month-1,date,hr,min,sec
+ if (dateOne > dateTwo) {    
+		alert("Date One is greater than Date Two.");  
+   	document.getElementById("SubmitButton").disabled = true;
+ //document.getElementById("submit_btn").disabled = true;
+   }else {    
+     alert("Date Two is greater than Date One.");    
+   }    
+alert(dateOne);
+alert(dateTwo);

@@ -1,0 +1,5 @@
+//HideSectionOnLoadbyIssuanceCertificate
+$("#4704").parent().parent().parent().parent().hide(); // Json section
+$("#4387").parent().parent().parent().hide();// Certificate section 
+var bt = document.getElementById('SubmitButton'); 
+bt.disabled = true;/; 

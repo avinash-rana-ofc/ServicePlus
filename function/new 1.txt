@@ -1,0 +1,10 @@
+var TOG = document.getElementById('4825').value;//Type of Organisation
+if(TOG == 19)
+  {
+    alert("is 19");
+    $('#4821').parent().parent().show();//others
+  }
+else{
+  alert("not 19");
+  $('#4821').parent().parent().hide();//others
+}

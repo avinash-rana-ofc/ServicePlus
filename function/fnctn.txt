@@ -1,0 +1,170 @@
+//SUBMIT BUTTON
+SubmitButton
+//UPDATE BUTTON
+4539
+//status
+4546
+//
+$(function () 
+{
+  var REJ = document.getElementById("4561_1").value;  //Reject
+  var DEL = document.getElementById("4561_2").value;  //Deliver
+var FOR = document.getElementById("4561_3").value;  //Forward
+  alert(REJ);//10
+ alert(DEL);//11
+   alert(FOR);//9
+
+return true;
+});
+
+
+
+
+$(function () 
+{
+  var REJ = document.getElementById("4561_1").value;  //Reject
+  
+  var DEL = document.getElementById("4561_2").value;  //Deliver
+var FOR = document.getElementById("4561_3").value; 
+  //Submit button
+   var bt = document.getElementById('SubmitButton');
+ 
+  //Reject
+   if(document.getElementById('4561_1').checked==true){
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+  //Deliver
+   if(document.getElementById('4561_3').checked==true){
+     bt.disabled=true;
+    
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+  //Forward
+   if(document.getElementById('4561_3').checked==true){
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+   //Application Shortfall
+   if(document.getElementById('4562_1').checked==true){
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+ 
+  
+  //Forward
+  alert(REJ);//10
+ alert(DEL);//11
+   alert(FOR);//9
+
+return true;
+});
+
+
+
+
+
+
+
+
+
+$(function () 
+{
+  var REJ = document.getElementById("4561_1");  //Reject
+  var DEL = document.getElementById("4561_2");  //Deliver
+  var FOR = document.getElementById("4561_3"); //Forward
+  //Submit button
+   var bt = document.getElementById('SubmitButton');
+ 
+  //Reject
+   if(REJ.checked==true){
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+  //Deliver
+   if(DEL.checked==true){
+     bt.disabled=true;
+    
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+  //Forward
+   if(FOR.checked==true){
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+   //Application Shortfall
+   if(document.getElementById('4562_1').checked==true){
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+ 
+  
+ 
+
+return true;
+});
+
+
+
+
+
+$("#4540").parent().parent().parent().parent().hide(); //json Section 
+$("#4562_2").parent().parent().hide(); //Approved application radio button 
+
+
+
+
+$("#4540").parent().parent().parent().parent().hide(); //json Section 
+$("#4562_2").parent().parent().hide(); //Approved application radio button 
+$("#4539").parent().parent().parent().hide();  //update Section  
+
+var bt = document.getElementById('SubmitButton');
+bt.disabled = true;
+
+
+$('input:radio[name=4561]').change(function()           //action
+{
+var check = $('input:radio[name=4561]:checked').val();
+
+$("#4540").parent().parent().parent().parent().hide(); //json Section 
+$("#4562_2").parent().parent().hide(); //Approved application radio button 
+var bt = document.getElementById('SubmitButton');
+bt.disabled = true;
+if(check==11)											//Deliver
+{
+$("#4539").parent().parent().parent().show();  //update Section 
+
+$("#4540").parent().parent().parent().parent().hide(); //json Section 
+$("#4562_2").parent().parent().hide(); //Approved application radio button   
+bt.disabled = true;
+}
+else if (check==10)                                     //Reject
+{
+$("#4539").parent().parent().parent().hide();  //update Section  
+
+$("#4540").parent().parent().parent().parent().hide(); //json Section 
+$("#4562_2").parent().parent().hide(); //Approved application radio button  
+bt.disabled = false;  
+}
+else if (check==9)                                     //Forward
+{
+$("#4539").parent().parent().parent().hide();  //update Section  
+
+$("#4540").parent().parent().parent().parent().hide(); //json Section 
+$("#4562_2").parent().parent().hide(); //Approved application radio button  
+bt.disabled = false;  
+}}
+);
+
+$(function()       
+{
+$("#4540").parent().parent().parent().parent().hide(); //json Section 
+$("#4562_2").parent().parent().hide(); //Approved application radio button 
+var bt = document.getElementById('SubmitButton');
+ 
+bt.disabled = true;   
+}
+);
+return true;

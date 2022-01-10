@@ -1,0 +1,57 @@
+//windowalertonclickgetdataWith18Yrs
+
+$(function()
+{
+
+// 90 days alert js
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) 
+{
+    dd = '0'+dd;
+} 
+if(mm<10) 
+{
+    mm = '0'+mm;
+} 
+today = mm + '/' + dd + '/' + yyyy;
+alert(today);
+//var emptype = $('input:text[name=3260]').val(); //emp type
+var DOB = document.getElementById("4923").value;
+var DOBarray=DOB.split("/");
+var todayarray=today.split("/");
+DOBDate=DOBarray[1]+'/'+DOBarray[0]+'/'+DOBarray[2];
+alert(DOBDate);
+today=todayarray[0]+'/'+todayarray[1]+'/'+todayarray[2];
+var diffd= (Date.parse(today) - Date.parse(DOBDate));
+//alert(today);
+ // days difference
+var diffDays = Math.ceil(diffd / (1000 * 3600 * 24));
+alert(diffDays);
+// difference
+//document.getElementById("1223").value= diffDays;
+
+//var diffDays = $('input:text[name=1223]').val(); // diffDays
+   var days=1000*60*60*24;
+  var month=31;
+   var day=(diffDays%365);
+  alert("days"+day);
+
+     var years = (Math.floor(diffDays/365));
+  //alert("ans"+365*years-diffDays);
+
+     var months = Math.round(diffDays % 365)/month;
+  //alert("hi"+years+"months"+months);
+  age = years +" Years " + day +" Days"
+   $("#"+4927).val(age);
+
+if(diffDays <=6574)
+{
+alert("Minimum 18 years Required");
+}return true;
+}
+);
+

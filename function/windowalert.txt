@@ -1,0 +1,24 @@
+//On click window alert get data button
+$(function()
+{
+//var bt = document.getElementById('SubmitButton');
+var bt1 = document.getElementById('3821'); //to get data Button ID
+bt1.disabled = false;
+
+status = $('input:text[name=3883]').val(); //  status
+
+if(status==2)
+{
+window.alert("Invalid License number. Kindly Put correct License number!!!");
+//bt.disabled = false;  //enable Submit Button
+bt1.disabled = false;
+}
+else if(status==3)
+{
+window.alert("Invalid Flat number. Kindly Put correct Flat number!!!");
+//bt.disabled = false;  //enable Submit Button
+bt1.disabled = false;
+}
+}
+);
+return true;

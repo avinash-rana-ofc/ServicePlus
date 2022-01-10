@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $('#4825').on('change', function() {
+      if ( this.value == '19')
+      //.....................^.......
+      {
+        $("#4821").parent().parent().show();
+      }
+      else
+      {
+        $("#4821").parent().parent().hide();
+      }
+    });
+});

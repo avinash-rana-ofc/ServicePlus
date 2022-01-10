@@ -1,0 +1,94 @@
+//onloadReadonly
+$("#4109").parent().parent().parent().parent().hide();//applicant section
+$("#4118").parent().parent().parent().parent().hide();//flat section
+$("#4129").parent().parent().parent().parent().hide();//Office section
+$("#4141").parent().parent().parent().parent().hide();// payment section
+$("#4277").parent().parent().parent().parent().hide();// latest payment section
+$("#4147").parent().parent().parent().parent().hide();// section
+
+$(function()
+{
+	if(document.getElementById('4109'))
+	{
+		document.getElementById('4109').readOnly=true;
+	}
+//flat details
+	if(document.getElementById('4118'))//app ref no
+	{
+		document.getElementById('4118').readOnly=true;
+	}
+	if(document.getElementById('4119'))//flat category
+	{
+		document.getElementById('4119').readOnly=true;
+	}
+	if(document.getElementById('4120'))//flat no
+	{
+		document.getElementById('4120').disabled=true;
+	}
+	if(document.getElementById('4120'))//floor
+	{
+		document.getElementById('4120').disabled=true;
+	}
+	if(document.getElementById('4122'))//flat id
+	{
+		document.getElementById('4122').readOnly=true;
+	}
+	if(document.getElementById('4123'))//buildng name
+	{
+		document.getElementById('4123').readOnly=true;
+	}
+	if(document.getElementById('4285'))//buildng no
+	{
+		document.getElementById('4285').readOnly=true;
+	}
+	if(document.getElementById('4124'))
+	{
+		document.getElementById('4124').readOnly=true;//buildng addr
+	}
+	if(document.getElementById('4126'))//pin
+	{
+		document.getElementById('4126').readOnly=true;
+	}
+
+//previous payment detail
+	if(document.getElementById('4141'))//prev receipt no
+	{
+		document.getElementById('4141').readOnly=true;
+	}
+	if(document.getElementById('4142'))//amt
+	{
+		document.getElementById('4142').readOnly=true;
+	}
+	if(document.getElementById('4274'))//frm date
+	{
+		document.getElementById('4274').readOnly=true;
+	}
+	if(document.getElementById('4275'))//to date
+	{
+		document.getElementById('4275').readOnly=true;
+	}
+	if(document.getElementById('4276'))//paymnt date
+	{
+ 		document.getElementById('4276').readOnly=true;
+	}
+	if(document.getElementById('4194'))//year
+	{
+		document.getElementById('4194').readOnly=true;
+	}
+	if(document.getElementById('4195'))//month
+	{
+		document.getElementById('4195').readOnly=true;
+	}
+      if(document.getElementById('4195'))//month
+	{
+ 		document.getElementById('4195').readOnly=true;
+	}
+     if(document.getElementById('4284'))//month
+	{
+  		 document.getElementById('4284').readOnly=true;
+	}
+       
+	}
+	);
+return true;
+	

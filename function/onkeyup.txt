@@ -1,0 +1,36 @@
+$(function () 
+{
+  var radioValue =$("input[name='4972']:checked").val();
+  alert(radioValue);
+ // var FAT = $("#4972_1").val();  //Father
+    //alert(FAT);
+  //var HUS = document.getElementById("4972_2").val();  //Husband
+ // alert(FAT);
+  //  alert(HUS);
+  
+ 
+  //Reject
+   if(radioValue == 2){
+     alert("in 2"); 
+     $("#4925").parent().parent().hide(); //JSON SECTION
+   }
+  
+  //Deliver
+   if(DEL.checked==true){
+     bt.disabled=true;
+    
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+  //Forward
+   if(FOR.checked==true){
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+  
+   //Application Shortfall
+   if(document.getElementById('4562_1').checked==true){
+      $("#4540").parent().parent().parent().parent().hide(); //JSON SECTION
+   }
+return true;
+});
+
